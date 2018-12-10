@@ -7,7 +7,7 @@ namespace SimpleFactory
 {
 	public class GunStroe : MonoBehaviour
 	{
-		private readonly GunFactory _factory = new GunFactory();
+		private GunFactory _factory;
 
 		public GunStroe(GunFactory factory)
 		{

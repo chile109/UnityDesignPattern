@@ -14,10 +14,12 @@ namespace SimpleFactory
 	{
 		public virtual void Prepare()
 		{
+			Debug.Log("Making HandGun!");
 		}
 
 		public virtual void Shot()
 		{
+			Debug.Log("Pom!");
 		}
 	}
 	
