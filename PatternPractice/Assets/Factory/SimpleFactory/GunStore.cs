@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace SimpleFactory
+namespace Factory.SimpleFactory
 {
 	public class GunStore
 	{
