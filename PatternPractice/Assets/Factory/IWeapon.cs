@@ -10,7 +10,7 @@ namespace SimpleFactory
 		void Shot();	//Action of using weapon
 	}
 
-	public class HandGun : Weapon
+	public class HandGun : MonoBehaviour, Weapon
 	{
 		public void Prepare()
 		{
@@ -23,7 +23,7 @@ namespace SimpleFactory
 		}
 	}
 	
-	public class ShotGun : Weapon
+	public class ShotGun : MonoBehaviour, Weapon
 	{
 		public void Prepare()
 		{

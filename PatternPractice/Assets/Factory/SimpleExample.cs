@@ -12,9 +12,10 @@ namespace SimpleFactory
 		void Start()
 		{
 			GunFactory _gunFactory = new GunFactory();
-			GunStroe _gunStroe = new GunStroe(_gunFactory);
+			GunStore _gunStroe = new GunStore(_gunFactory);
 
-			_gunStroe.BuyWeapon(WhatYouBuy).Shot();
+			var equipment = _gunStroe.BuyWeapon(WhatYouBuy);
+			equipment.GetComponent<Weapon>().Shot();
 		}
 	}
 }

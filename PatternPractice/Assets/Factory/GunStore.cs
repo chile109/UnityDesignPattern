@@ -5,20 +5,20 @@ using UnityEngine;
 
 namespace SimpleFactory
 {
-	public class GunStroe
+	public class GunStore
 	{
 		private readonly GunFactory _factory;
 
-		public GunStroe(GunFactory factory)
+		public GunStore(GunFactory factory)
 		{
 			this._factory = factory;
 		}
 
-		public Weapon BuyWeapon(WeaponType type)
+		public GameObject BuyWeapon(WeaponType type)
 		{
 			//The main create logic is striped to factory class
-			Weapon weapon = _factory.CreateWeapon(type);
-			weapon.Prepare();
+			var weapon = _factory.CreateWeapon(type);
+			weapon.GetComponent<Weapon>().Prepare();
 			
 			return weapon;
 		}
