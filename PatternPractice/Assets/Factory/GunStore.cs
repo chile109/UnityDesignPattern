@@ -16,14 +16,14 @@ namespace SimpleFactory
 
 		public Weapon BuyWeapon(String type)
 		{
-			Weapon weapon = _factory.CreateWeapon("Gun");
+			Weapon weapon = _factory.CreateWeapon(type);
 			weapon.Prepare();
 			weapon.Shot();
 
 			return weapon;
 		}
 
-		
+		 
 	}
 
 }

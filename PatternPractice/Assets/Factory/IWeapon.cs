@@ -12,14 +12,27 @@ namespace SimpleFactory
 
 	public class HandGun : Weapon
 	{
-		public virtual void Prepare()
+		public void Prepare()
 		{
 			Debug.Log("Making HandGun!");
 		}
 
-		public virtual void Shot()
+		public void Shot()
 		{
-			Debug.Log("Pom!");
+			Debug.Log("Pew!");
+		}
+	}
+	
+	public class ShotGun : Weapon
+	{
+		public void Prepare()
+		{
+			Debug.Log("Making ShotGun!");
+		}
+
+		public void Shot()
+		{
+			Debug.Log("Boom!");
 		}
 	}
 	
