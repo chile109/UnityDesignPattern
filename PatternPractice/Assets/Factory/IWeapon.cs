@@ -6,8 +6,8 @@ namespace SimpleFactory
 {
 	public interface Weapon
 	{
-		void Prepare();
-		void Shot();
+		void Prepare();	//Action of providing weapon
+		void Shot();	//Action of using weapon
 	}
 
 	public class HandGun : Weapon

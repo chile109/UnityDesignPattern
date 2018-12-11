@@ -5,25 +5,23 @@ using UnityEngine;
 
 namespace SimpleFactory
 {
-	public class GunStroe : MonoBehaviour
+	public class GunStroe
 	{
-		private GunFactory _factory;
+		private readonly GunFactory _factory;
 
 		public GunStroe(GunFactory factory)
 		{
 			this._factory = factory;
 		}
 
-		public Weapon BuyWeapon(String type)
+		public Weapon BuyWeapon(WeaponType type)
 		{
+			//The main create logic is striped to factory class
 			Weapon weapon = _factory.CreateWeapon(type);
 			weapon.Prepare();
-			weapon.Shot();
-
+			
 			return weapon;
 		}
-
-		 
 	}
 
 }

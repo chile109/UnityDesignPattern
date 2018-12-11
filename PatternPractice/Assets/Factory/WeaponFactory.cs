@@ -5,6 +5,7 @@ namespace SimpleFactory
 {
 	public class GunFactory
 	{
+		//detemine which weapon to create
 		public Weapon CreateWeapon(WeaponType style) {
 			Weapon weapon = null;
 			switch (style)
@@ -13,7 +14,7 @@ namespace SimpleFactory
 					weapon = new HandGun();
 					break;
 				case WeaponType.Heavy:
-					weapon = new HandGun();
+					weapon = new ShotGun();
 					break;
 			}
 			return weapon;
