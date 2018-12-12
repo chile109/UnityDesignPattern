@@ -13,7 +13,7 @@ namespace Factory.FactoryMethod
 	{
 		public void Prepare()
 		{
-			Debug.Log("Making Gun!");
+			Debug.Log("Equiped Gun!");
 		}
 
 	}
@@ -22,7 +22,7 @@ namespace Factory.FactoryMethod
 	{
 		public void Prepare()
 		{
-			Debug.Log("Making Bullet!");
+			Debug.Log("Get Bullet!");
 		}
 	}
 	
@@ -30,7 +30,7 @@ namespace Factory.FactoryMethod
 	{
 		public void Prepare()
 		{
-			Debug.Log("Making Bow!");
+			Debug.Log("Equiped Bow!");
 		}
 
 	}
@@ -39,7 +39,7 @@ namespace Factory.FactoryMethod
 	{
 		public void Prepare()
 		{
-			Debug.Log("Making Arrow!");
+			Debug.Log("Get Arrow!");
 		}
 	}
 
